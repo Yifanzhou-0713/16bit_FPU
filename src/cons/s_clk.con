@@ -1,0 +1,10 @@
+create_clock -period 3.333 [get_ports clk]
+
+set_clock_latency -source -max 0.7 [get_ports clk]
+
+set_clock_latency -max 0.3 [get_ports clk]
+
+set_clock_uncertainty -setup 0.15 [get_ports clk]
+
+set_clock_transition 0.12 [get_ports clk]
+
